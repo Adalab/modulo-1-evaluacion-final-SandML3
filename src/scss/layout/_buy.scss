@@ -34,6 +34,8 @@
             .photo {
                 width: 160%;
                 transform: translateY(-30%) translateX(-18%);
+                object-fit: cover;
+                min-height: 438px;
             }
         }
     }
