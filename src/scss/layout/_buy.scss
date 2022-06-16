@@ -17,6 +17,10 @@
         &__title {
             font-size: 1.5rem;
             text-align: center;
+            
+            @media all and (min-width: 900px) {
+                font-size: 1.875rem;
+            }
         }
 
         &__description {
@@ -29,11 +33,16 @@
             width: 100vw;
             height: 304px;
             overflow: hidden;
+            transition-property: height;
+            transition-duration: 500ms;
 
+            @media all and (min-width: 900px) {
+                height: 474px;
+            }
             
             .photo {
-                width: 160%;
-                transform: translateY(-30%) translateX(-18%);
+                width: 130%;
+                transform: translateY(-20%) translateX(-15%);
                 object-fit: cover;
                 min-height: 438px;
             }

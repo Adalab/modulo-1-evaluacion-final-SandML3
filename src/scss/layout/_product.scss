@@ -5,8 +5,12 @@
         gap: 36px;
         grid-template-columns: 1fr;
         padding-bottom: 18px;
-        
         background-color: $main_background_color;
+
+        @media all and (min-width: 900px) {
+            grid-template-columns: repeat(3, 1fr);
+            padding: 41px 101px 73px 91px;
+        }
 
         &__title {
             font-size: 1.5rem;
@@ -17,6 +21,10 @@
             &--uppercase {
                 text-transform: uppercase;
             } 
+
+            @media all and (min-width: 900px) {
+                grid-column: span 3;
+            }
         }
 
         &__needed {

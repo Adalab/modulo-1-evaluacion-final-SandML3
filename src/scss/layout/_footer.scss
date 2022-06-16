@@ -1,20 +1,27 @@
 .footer {
     background-color: $main_color_dark;
-    padding: 26px 59px 63px 146px;
-
+    padding: 26px 59px 56px 146px;
+    display: flex;
+    flex-direction: column;
 
     &__menu__shop,
     &__menu__we,
     &__menu__contact {
         
-
+        @media all and (min-width: 900px) {
+            flex-basis: 2;         
+        }
 
         &__title {
             color: $main_color_light;
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             line-height: 2.4rem;
             margin-top: 30px;
-           
+
+            @media all and (min-width: 900px) {
+                margin-top: 0;         
+            }
+            
         }
 
         &__item {
@@ -27,6 +34,7 @@
     &__menu__socialmedia {
         display: flex;
         margin-top: 20px;
+        margin-bottom: 7px;
 
         &__item {
             padding: 11px;
@@ -38,15 +46,31 @@
     .arrow {
         position: absolute;
         right: 0;
+        padding: 16px 29px 16px;
         
+        
+        .fa-arrow-up-long {
+            color: white;
+            font-size: 1.5rem;
+
+            @media all and (min-width: 900px) {
+                position: static;         
+            }
+        }
+
+        @media all and (min-width: 900px) {
+            position: relative;
+            bottom: -100px;
+            left: 30px;
+                   
+        }
     }
 
-    .fa-arrow-up {
-        padding: 0px 28px 16px 0px;
-        color: white;
-        font-size: 1.3rem;
-        
-        
-        
+    @media all and (min-width: 900px) {
+        flex-direction: row;  
+        align-items: baseline;
+        justify-content: space-between;  
+        padding: 71px 57px 89px 118px;       
     }
+    
 }

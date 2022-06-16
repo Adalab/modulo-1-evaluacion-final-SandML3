@@ -8,6 +8,10 @@
         color: $main_color_dark;
         object-fit: contain;
         font-size: 1.5rem;
+
+        @media all and (min-width: 900px) {
+            padding: 75px 82px;
+        }
     }
 
     &__menu {
