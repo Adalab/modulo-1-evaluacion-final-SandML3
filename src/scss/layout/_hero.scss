@@ -1,0 +1,32 @@
+.main {
+    
+    &__hero {
+    
+        &__wrapper {
+            background-image: url("../images/hero.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__logo {
+            width: 213px;
+            margin-top: 19px; 
+            position: absolute;
+            top: 0;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+            color: $main_color_dark;
+            font-weight: 600;
+            margin: 62px 0;
+        }
+
+    }
+}

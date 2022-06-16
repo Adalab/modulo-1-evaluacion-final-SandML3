@@ -1,0 +1,52 @@
+.footer {
+    background-color: $main_color_dark;
+    padding: 26px 59px 63px 146px;
+
+
+    &__menu__shop,
+    &__menu__we,
+    &__menu__contact {
+        
+
+
+        &__title {
+            color: $main_color_light;
+            font-size: 1.35rem;
+            line-height: 2.4rem;
+            margin-top: 30px;
+           
+        }
+
+        &__item {
+            color: $main_color_light;
+            font-size: 0.875rem;
+            line-height: 1.3rem;
+        }
+    }
+
+    &__menu__socialmedia {
+        display: flex;
+        margin-top: 20px;
+
+        &__item {
+            padding: 11px;
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        right: 0;
+        
+    }
+
+    .fa-arrow-up {
+        padding: 0px 28px 16px 0px;
+        color: white;
+        font-size: 1.3rem;
+        
+        
+        
+    }
+}

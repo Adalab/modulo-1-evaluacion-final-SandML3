@@ -1,0 +1,49 @@
+.main {
+    
+    &__product {
+        display: grid;
+        gap: 36px;
+        grid-template-columns: 1fr;
+        padding-bottom: 18px;
+        
+        background-color: $main_background_color;
+
+        &__title {
+            font-size: 1.5rem;
+            padding: 41px 47px 0px;
+            text-align: center;
+            line-height: 2rem;
+            
+            &--uppercase {
+                text-transform: uppercase;
+            } 
+        }
+
+        &__needed {
+            width: 13rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            gap: 12px;
+
+            &__image {
+                width: 90px;
+                margin: 0px 65px 35px 53px;
+            }
+
+            &__title {
+                font-size: 1.25rem;
+                text-align: center;
+            }
+
+            &__description {
+                text-align: center;
+                padding-bottom: 20px;
+                line-height: 1.5rem;
+            }
+
+        }
+    }
+}

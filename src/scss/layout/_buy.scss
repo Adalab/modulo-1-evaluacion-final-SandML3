@@ -1,0 +1,41 @@
+.main {
+    overflow: hidden;
+
+    &__buy {
+        background-color: $main_background_color;
+        display: flex;
+        flex-direction: column;
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 10px;
+            padding: 87px 27px 16px;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        &__description {
+            font-size: 0.875rem;
+            margin-bottom: 20px;
+            text-align: center;
+        } 
+
+        &__image {
+            width: 100vw;
+            height: 304px;
+            overflow: hidden;
+
+            
+            .photo {
+                width: 160%;
+                transform: translateY(-30%) translateX(-18%);
+            }
+        }
+    }
+}
+

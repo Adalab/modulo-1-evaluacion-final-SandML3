@@ -1,0 +1,17 @@
+.header {
+    position: fixed;
+    top: 0;
+   
+    &__icon {
+        display: inline-block;
+        width: 1.5rem;
+        margin-top: 55px;
+        margin-left: 33px;
+        color: $main_color_dark;
+        object-fit: contain;
+    }
+
+    &__menu {
+        display: none;
+    }
+}
