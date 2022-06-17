@@ -18,6 +18,10 @@
                 align-items: baseline;
                 padding-left: 147px;
             }
+
+            @media all and (min-width: 1728px) {
+                padding-left: 280px;      
+            }
         }
 
         &__logo {

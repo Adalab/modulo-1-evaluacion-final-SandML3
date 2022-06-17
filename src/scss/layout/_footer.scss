@@ -1,33 +1,44 @@
 .footer {
     background-color: $main_color_dark;
-    padding: 26px 59px 56px 146px;
+    padding: 56px 29px 16px 146px;
     display: flex;
+    gap: 20px;
     flex-direction: column;
+
+    &__menu {
+        flex-grow: 1;
+        
+        @media all and (min-width: 1728px) {
+            width: 288px;
+        }
+    }
 
     &__menu__shop,
     &__menu__we,
     &__menu__contact {
-        
-        @media all and (min-width: 900px) {
-            flex-basis: 2;         
-        }
 
         &__title {
             color: $main_color_light;
             font-size: 1.25rem;
             line-height: 2.4rem;
-            margin-top: 30px;
 
             @media all and (min-width: 900px) {
-                margin-top: 0;         
+                margin-top: 0;
             }
-            
+
+            @media all and (min-width: 1728px) {
+                font-size: 1.5rem;
+            }
         }
 
         &__item {
             color: $main_color_light;
             font-size: 0.875rem;
             line-height: 1.3rem;
+
+            @media all and (min-width: 1728px) {
+                font-size: 1rem;
+            }
         }
     }
 
@@ -43,34 +54,33 @@
         }
     }
 
-    .arrow {
-        position: absolute;
-        right: 0;
-        padding: 16px 29px 16px;
-        
-        
-        .fa-arrow-up-long {
-            color: white;
-            font-size: 1.5rem;
+    .arrow__container {
+        width: 24px;
+        position: relative;
+        left: calc(100% - 10px - 5px);
 
-            @media all and (min-width: 900px) {
-                position: static;         
+        .arrow {
+            padding: 5px;
+            .fa-arrow-up-long {
+                color: white;
             }
         }
 
         @media all and (min-width: 900px) {
-            position: relative;
-            bottom: -100px;
-            left: 30px;
-                   
-        }
+            position: static;
+            transform: translateY(550%);
+       }
     }
 
     @media all and (min-width: 900px) {
-        flex-direction: row;  
-        align-items: baseline;
-        justify-content: space-between;  
-        padding: 71px 57px 89px 118px;       
+         flex-direction: row;
+         align-items: baseline;
+         padding: 71px 57px 89px 118px;
     }
-    
+
+    @media all and (min-width: 1728px) {
+        padding: 131px 352px;
+        padding-right: 187px;
+    }
+
 }

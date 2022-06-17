@@ -12,9 +12,29 @@
         @media all and (min-width: 900px) {
             padding: 75px 82px;
         }
+
+        @media all and (min-width: 1728px) {
+            display: none;       
+        }
     }
 
     &__menu {
         display: none;
+
+        &__item {
+            color: $main_color_dark;
+            padding: 30px;
+        }
+
+        @media all and (min-width: 1728px) {
+            display: flex;      
+            margin-top: 76px;
+            margin-left: 250px;
+        }
     }
+
+    @media all and (min-width: 1728px) {
+        position: absolute;      
+    }
+    
 }
