@@ -1,71 +1,82 @@
-.main {
+.main__shipping {
+    background-color: $secondary_background_color;
+    display: flex;
+    flex-direction: column;
+    padding: 2.875rem 0rem 3.1875rem;
+    justify-content: center;
+    align-items: center;
+    
+    &__image {
+        width: 120px;
+        margin: 0px 152px 10px 142px;
 
-    &__shipping {
-        background-color: $secondary_background_color;
-        display: flex;
-        flex-direction: column;
-        padding: 46px 0px 44px;
-        justify-content: center;
-        align-items: center;
+        @media all and (min-width: 900px) {
+            margin-right: 25rem;   
+            margin-left: 23.75rem;
+        }
+    }
+
+    &__title {
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 0.625rem;
         
-        &__image {
-            width: 120px;
-            margin: 0px 152px 10px 142px;
-        }
-
-        &__title {
-            color: white;
-            font-size: 1.5rem;
-            text-align: center;
-            margin-bottom: 10px;
-            
-            @media all and (min-width: 900px) {
-                font-size: 1.875rem;
-            }
-
-            @media all and (min-width: 1728px) {
-                font-size: 2.25rem;     
-            }
-        }
-
-        &__description {
-            color: white;
-            font-size: 0.875rem;
-            text-align: center;
-            line-height: 1.5rem;
-
-            @media all and (min-width: 1728px) {
-                font-size: 1rem;     
-            }
-        }
-
-        &__button {
-            margin: 17px 0px 0px;
-            padding: 12px 24px;
-            text-decoration: underline;
-            color: white;
-            font-weight: 600;
-
-            &:hover {
-                color: $secondary_background_color;
-                background-color: white;
-                animation: gradient 2s;
-
-                @keyframes gradient {
-                    0% {
-                        background-color: $secondary_background_color;
-                        color: #fd8c4a;
-                    }
-                    100% {
-                        background-color: white;
-                        color: $secondary_background_color;
-                    }
-                }
-            }
+        @media all and (min-width: 900px) {
+            font-size: 1.875rem;
         }
 
         @media all and (min-width: 1728px) {
-            padding: 61px 437px 78px 492px;   
+            font-size: 2.25rem;     
         }
     }
+
+    &__description {
+        color: white;
+        font-size: 0.875rem;
+        text-align: center;
+        line-height: 1.5rem;
+
+        @media all and (min-width: 900px) {
+            margin: 0 13.25rem;   
+        }
+
+        @media all and (min-width: 1728px) {
+            font-size: 1rem;     
+        }
+    }
+
+    &__button {
+        margin: 1.0625rem 0rem 0rem;
+        padding: 0.75px 1.5rem;
+        text-decoration: underline;
+        color: white;
+        font-weight: 600;
+
+        &:hover {
+            color: $secondary_background_color;
+            background-color: white;
+            animation: gradient 2s;
+
+            @keyframes gradient {
+                0% {
+                    background-color: $secondary_background_color;
+                    color: #fd8c4a;
+                }
+                100% {
+                    background-color: white;
+                    color: $secondary_background_color;
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: 900px) {
+        padding: 2.875rem 3.1875rem 3.1875rem 3.125rem;   
+    }
+
+    @media all and (min-width: 1728px) {
+        padding: 3.8125rem 27.3125rem 4.875rem 30.75rem;   
+    }
 }
+

@@ -1,23 +1,20 @@
 .main {
-    
     &__hero {
     
         &__wrapper {
             background-image: url("../images/hero.jpg");
-            background-position: center;
+            background-position: top;
             background-size: cover;
             background-repeat: no-repeat;
             height: 100vh;
-
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             
-
             @media all and (min-width: 900px) {
                 align-items: baseline;
-                padding-left: 147px;
+                padding-left: 9.188rem;
                 transition: padding;
                 transition-duration: 2s;
                 animation-name: padding-title;
@@ -25,34 +22,34 @@
 
                 @keyframes padding-title {
                     0% {
-                        padding-left: 62px;
+                        padding-left: 3.875rem;
                     }
                     0% {
-                        padding-left: 147px;
+                        padding-left: 9.188rem;
                     }
                 }
             }
 
             @media all and (min-width: 1728px) {
-                padding-left: 280px;      
+                padding-left: 17.5rem;      
             }
         }
 
         &__button {
-            margin: 0px 119px 64px;
+            margin: 0rem 7.438rem 4rem;
         }
 
         &__logo {
-            width: 213px;
-            margin-top: 19px; 
+            width: 13.313rem;
+            margin-top: 1.188rem; 
             position: absolute;
             top: 0;
             transition: margin;
             transition-duration: 2s;
 
             @media all and (min-width: 900px) {
-                margin-top: 39px;
-                left: calc(50% - 106.5px);
+                margin-top: 2.438rem;
+                left: calc(50% - 6.656rem);
             }
         }
 
@@ -60,7 +57,7 @@
             font-size: 1.5rem;
             color: $main_color_dark;
             font-weight: 600;
-            margin: 62px 0;
+            margin: 3.875rem 0;
             transition: font-size;
             transition-duration: 1s;
 

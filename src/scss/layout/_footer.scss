@@ -1,24 +1,25 @@
 .footer {
     background-color: $main_color_dark;
-    padding: 56px 29px 16px 146px;
+    padding: 3.5rem 1.8125rem 1rem 9.125rem;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     flex-direction: column;
     
 
     &__menu {
         flex-grow: 1;
-        width: 208px;
-        margin: 0 auto;
+        width: 13rem;
+        margin-right: 3.6875rem;
         
         @media all and (min-width: 1728px) {
-            width: 288px;
+            width: 18rem;
         }
     }
 
     &__menu__shop,
     &__menu__we,
     &__menu__contact {
+        
 
         &__title {
             color: $main_color_light;
@@ -47,29 +48,27 @@
 
     &__menu__socialmedia {
         display: flex;
-        margin-top: 20px;
-        margin-bottom: 7px;
+        margin-top: 1.25rem;
+        margin-bottom: 0.4375rem;
+        transform: translateX(-0.6875rem);
 
         &__item {
-            padding: 11px;
+            padding: 0.6875rem;
             font-size: 1.5rem;
             color: white;
             &:hover {
                 font-size: 2rem;
             }
         }
-
-        
-
     }
 
     .arrow__container {
         width: 24px;
         position: relative;
-        left: calc(100% - 10px - 5px);
+        left: calc(100% - 0.625rem - 0.3125rem);
 
         .arrow {
-            padding: 5px;
+            padding: 0.3125rem;
             .fa-arrow-up-long {
                 color: white;
             }
@@ -84,12 +83,12 @@
     @media all and (min-width: 900px) {
          flex-direction: row;
          align-items: baseline;
-         padding: 71px 57px 89px 118px;
+         padding: 4.4375rem 3.5625rem 5.5625rem 7.375rem;
     }
 
     @media all and (min-width: 1728px) {
-        padding: 131px 352px;
-        padding-right: 187px;
+        padding: 8.1875rem 22rem;
+        padding-right: 11.6875rem;
     }
 
 }

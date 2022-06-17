@@ -4,13 +4,13 @@
    
     &__icon {
         display: inline-block;
-        padding: 55px 33px;
+        padding: 3.438rem 2.063rem;
         color: $main_color_dark;
         object-fit: contain;
         font-size: 1.5rem;
 
         @media all and (min-width: 900px) {
-            padding: 75px 82px;
+            padding: 4.688rem 5.125rem;
         }
 
         @media all and (min-width: 1728px) {
@@ -23,15 +23,15 @@
 
         &__item {
             color: $main_color_dark;
-            padding: 30px;
+            padding: 1.875rem;
         }
 
         @media all and (min-width: 1728px) {
             display: flex;      
-            margin-top: 76px;
-            margin-left: 250px;
+            margin-top: 4.75rem;
+            margin-left: 15.625rem;
             animation: extend 1s;
-            
+
             @keyframes extend {
                 0% {
                     opacity: 0%;
