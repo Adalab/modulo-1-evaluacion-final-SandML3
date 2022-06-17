@@ -4,9 +4,12 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
+    
 
     &__menu {
         flex-grow: 1;
+        width: 208px;
+        margin: 0 auto;
         
         @media all and (min-width: 1728px) {
             width: 288px;

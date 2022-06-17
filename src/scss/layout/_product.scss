@@ -2,9 +2,9 @@
     
     &__product {
         display: grid;
-        gap: 36px;
+        gap: 37px;
         grid-template-columns: 1fr;
-        padding-bottom: 18px;
+        padding: 41px 47px 18px 45px;
         background-color: $main_background_color;
 
         @media all and (min-width: 900px) {
@@ -19,7 +19,6 @@
 
         &__title {
             font-size: 1.5rem;
-            padding: 41px 47px 0px;
             text-align: center;
             line-height: 2rem;
             
