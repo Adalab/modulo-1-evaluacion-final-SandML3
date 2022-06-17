@@ -5,3 +5,13 @@
         color: white;
     }
 }
+
+.header .link {
+    transition: font-size 500ms; 
+
+    &:hover {
+        font-size: 1.2rem;
+        color: $main_color_dark;
+        font-weight: bold;
+    }
+}
