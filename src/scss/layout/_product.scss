@@ -8,20 +8,34 @@
         text-align: center;
         line-height: 2rem;
         margin: 0 auto;
-        
+        transition: all 2s;
+
         &--uppercase {
             text-transform: uppercase;
-        } 
+        }
 
         @media all and (min-width: 900px) {
             max-width: 33.375rem;
-            grid-column: span 3;
         }
-        
+
         @media all and (min-width: 1728px) {
-            min-width: 50rem;
-            font-size: 2.25rem;   
-            line-height: 3rem;  
+            max-width: 50rem;
+            font-size: 2.25rem;
+            line-height: 3rem;
+
+            @keyframes text {
+                0% {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    max-width: 33.375rem;
+                }
+                100% {
+                    font-size: 2.25rem;
+                    line-height: 3rem;
+                    max-width: 50rem;
+                }
+
+            }
         }
     }
 
@@ -32,37 +46,47 @@
         gap: 2.3125rem;
         margin-top: 2.3125rem;
 
-        
+
         @media all and (min-width: 900px) {
             grid-template-columns: repeat(3, 1fr);
             align-items: baseline;
             column-gap: 2.625rem;
             margin: 2.3125rem auto 0rem;
             max-width: 60%;
+            animation: icon 3s;
+
+            @keyframes icon {
+                0% {
+                    grid-template-columns: 1fr;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0;
+                }
+            }
         }
 
         @media all and (min-width: 1728px) {
             max-width: 80%;
             column-gap: 18.5625rem;
         }
-
     }
 
     &__needed {
         width: 14rem;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
         margin: 0 auto;
         gap: 0.75rem;
 
         &__image {
             width: 90px;
-            margin: 0px 65px 35px 53px;
+            margin: 0px auto 40px;
 
             @media all and (min-width: 1728px) {
-                width: 120px;      
+                width: 120px;
+                transition: all 2s;
             }
         }
 
@@ -81,9 +105,9 @@
     @media all and (min-width: 900px) {
         padding: 2.5625rem 6.3125rem 4.5625rem 5.6875rem;
         margin: 0 auto;
-    }    
+    }
 
     @media all and (min-width: 1728px) {
-        padding: 4.375rem 14.9375rem 5.375rem 19.375rem; 
+        padding: 4.375rem 14.9375rem 5.375rem 19.375rem;
     }
 }
