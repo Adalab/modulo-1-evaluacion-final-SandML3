@@ -45,6 +45,23 @@
             text-decoration: underline;
             color: white;
             font-weight: 600;
+
+            &:hover {
+                color: $secondary_background_color;
+                background-color: white;
+                animation: gradient 2s;
+
+                @keyframes gradient {
+                    0% {
+                        background-color: $secondary_background_color;
+                        color: #fd8c4a;
+                    }
+                    100% {
+                        background-color: white;
+                        color: $secondary_background_color;
+                    }
+                }
+            }
         }
 
         @media all and (min-width: 1728px) {

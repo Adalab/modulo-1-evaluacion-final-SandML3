@@ -54,7 +54,13 @@
             padding: 11px;
             font-size: 1.5rem;
             color: white;
+            &:hover {
+                font-size: 2rem;
+            }
         }
+
+        
+
     }
 
     .arrow__container {

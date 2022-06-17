@@ -13,10 +13,24 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
 
             @media all and (min-width: 900px) {
                 align-items: baseline;
                 padding-left: 147px;
+                transition: padding;
+                transition-duration: 2s;
+                animation-name: padding-title;
+                animation-duration: 2s;
+
+                @keyframes padding-title {
+                    0% {
+                        padding-left: 62px;
+                    }
+                    0% {
+                        padding-left: 147px;
+                    }
+                }
             }
 
             @media all and (min-width: 1728px) {
@@ -33,6 +47,8 @@
             margin-top: 19px; 
             position: absolute;
             top: 0;
+            transition: margin;
+            transition-duration: 2s;
 
             @media all and (min-width: 900px) {
                 margin-top: 39px;
@@ -45,6 +61,8 @@
             color: $main_color_dark;
             font-weight: 600;
             margin: 62px 0;
+            transition: font-size;
+            transition-duration: 1s;
 
             @media all and (min-width: 900px) {
                 font-size: 2.25rem;

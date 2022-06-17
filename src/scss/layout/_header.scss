@@ -30,6 +30,16 @@
             display: flex;      
             margin-top: 76px;
             margin-left: 250px;
+            animation: extend 1s;
+            
+            @keyframes extend {
+                0% {
+                    opacity: 0%;
+                }
+                100% {
+                    opacity: 100%;
+                }
+            }
         }
     }
 
