@@ -25,6 +25,7 @@
             color: $main_color_light;
             font-size: 1.25rem;
             line-height: 2.4rem;
+            margin-left: 1rem;
 
             @media all and (min-width: 900px) {
                 margin-top: 0;
@@ -38,7 +39,8 @@
         &__item {
             color: $main_color_light;
             font-size: 0.875rem;
-            line-height: 1.3rem;
+            line-height: 1.5rem;
+            padding: 1rem;;
 
             @media all and (min-width: 1728px) {
                 font-size: 1rem;
@@ -50,6 +52,7 @@
         display: flex;
         margin-top: 1.25rem;
         margin-bottom: 0.4375rem;
+        margin-left: 1rem;
         transform: translateX(-0.6875rem);
 
         &__item {
