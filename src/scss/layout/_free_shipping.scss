@@ -1,0 +1,31 @@
+.main__free_shipping {
+    width: 100vw;
+    background-color: $main_color_dark;
+    color: white;
+    text-align: center;
+
+    @media all and (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    &__title {
+        @media all and (min-width: 900px) {
+           grid-column: span 3;
+        } 
+    }
+
+    &__subtitle--1 {
+        @media all and (min-width: 900px) {
+            padding-left: 30px;
+         } 
+    }
+
+    &__subtitle--2 {
+        @media all and (min-width: 900px) {
+        padding-right: 30px;
+        } 
+    }
+
+}
